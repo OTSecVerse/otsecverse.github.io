@@ -1,0 +1,30 @@
+---
+---
+
+/* prettier-ignore */
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* append your custom style below */
+
+/* Custom overrides: add below this line */
+:root {
+  --accent: #1f6feb;
+}
+
+/* Sidebar avatar */
+.sidebar .avatar img {
+  border-radius: 8px;
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+}
+
+/* Header link color */
+.header a,
+.nav a {
+  color: var(--accent);
+}
